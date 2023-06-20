@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-item si active"><strong>Simple Interest</strong></div>
+            <div class="menu-item ci"><strong>Compound Interest</strong></div>
+        </div>
+        <div class="form">
+            <div class="input-grp">
+                <label>Principal Amount<span class="required"></span></label>
+                <input type="text" id="pa" placeholder="ex:10000" autocomplete="off">
+            </div>
+            <div class="input-grp">
+                <label>Interest Rate (in %)<span class="required"></span></label>
+                <input type="text" id="ir" placeholder="ex:10" autocomplete="off">
+            </div>
+
+            <div class="input-grp">
+                <label>Duration (in year)<span class="required"></span></label>
+                <input type="text" id="dy" placeholder="ex:1" autocomplete="off">
+            </div>
+            <div class="input-grp ci-freq">
+                <label>Frequency (in year)<span class="required"></span></label>
+                <input type="text" id="fy" placeholder="ex:3" autocomplete="off">
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button class="btn"><strong>Calculate</strong></button><br><br>
+            <button class="btn1"><strong>Reset</strong></button>
+        </div>
+        <div class="result">
+            <strong>Total Amount : </strong>
+            <span class="total-amount">10000</span><br>
+            <strong>Total Interest : </strong>
+            <span class="total-interest">1000</span>
+
+        </div>
+    </div>
+</body>
+</html>
